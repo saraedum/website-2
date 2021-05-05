@@ -1,0 +1,267 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="Nicolas G. Hoermann">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+    
+    
+      
+        <title>echemdb - The community database for electrochemical data - echemdb.org</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cyclic-voltammograms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="echemdb.org" class="md-header__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            echemdb.org
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              echemdb - The community database for electrochemical data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="echemdb.org" class="md-nav__button md-logo" aria-label="echemdb.org" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    echemdb.org
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="cyclic-voltammograms">Cyclic Voltammograms</h1>
+<p>/* maybe here we could have some overview of the data, how many read
+how man first is an analysis figure to see contributions w.r.t to time?!
+website version on x axis ?!</p>
+<p>Then periodic table overview to click to get to systems / elements</p>
+<p>{{ periodic_table() }}</p>
+<h1 id="knowledge">Knowledge</h1>
+<p>Nico: I copied an own introduction</p>
+<p>Cyclic voltammetry is a standard experimental technique for studying electrochemical interfaces that allows to infer surface compositions and interface reactions as a function of the applied electrode potential. In practice, cyclic voltammograms (CVs) are obtained by varying the electrode potential at fixed scan rate and measuring the current response of the electrode immersed in electrolyte solution. In general, CVs are characterized by potential regions within the stability window of the solvent which exhibit peaks of varying shape and height, and regions at low and high potentials, where faradaic, electrocatalytic reactions lead to exponentially increasing currents, e.g. due to the decomposition of the solvent. At high scan rates and/or in regions with faradaic reactions, CVs are governed by kinetic processes which typically induce a pronounced asymmetry for the forward and backward scan direction and/or a strong scan-rate dependence.
+Evidently, any theoretical description of such CVs necessitates the use of kinetic models\cite{Tiwari2020}, including potentially also macroscopic mass transport\cite{Ringe2020}. </p>
+<p>On the other hand, at low scan rates and in potential windows without faradaic side reactions this asymmetry typically vanishes as does the scan-rate dependence (when currents are appropriately normalized). In this case, CV peak positions and shapes are related directly to the underlying thermodynamics of the electrified interface\cite{Wang2013}, and such CV experiments provide invaluable contributions to the understanding of the latter. In turn, such CVs can be understood and simulated based on equilibrium thermodynamic considerations\cite{Karlberg2007,Asiri2013, Chen2016, McCrum2016, McCrum2016b, Kristoffersen2018, Bagger2019, Yawei2019, Rossmeisl2020}. For such thermodynamic CVs the variation of the applied potential induces changes in the equilibrium surface charges, which can be traced back to changes in adsorbate coverages, as well as changes in the double layer charge, leading in sum to the observed electric current. As recently demonstrated for Ag(111) in halide containing solutions\cite{Hoermann2020JCTC}, double layer (DL) charging does not only add capacitive currents, but also affects equilibrium adsorbate coverages and the number of exchanged electrons per adsorbate -- as expressed by the electrosorption valency\cite{Hoermann2020JCTC,Vetter1972b,Schmickler1988,Hoermann2020Esorp}.</p>
+<p>In this work we therefore analyse in most general terms thermodynamic CVs with included DL response. The derived equations can naturally explain Non-Nernstian behaviour and introduce a sensitive dependence of CV peaks to the electrolyte, via its impact on the interfacial capacitance\cite{Garlyyev2018,Ringe2019}. We hope, these results might help in the future to better understand according experiments and thus also help to validate and improve theoretical models. This is in particular important as at present all (atomistic) theoretical models of electrified interfaces necessarily introduce approximations due to computational time constraints, e.g in the complexity of the atomistic description (e.g. the surface with or without explicit water\cite{Noerskov2004, Urushihara2015,Hansen2016,Peterson2018,Hoermann2019NPJ}), the quality of the energetics (e.g. empirical potentials\cite{reaxff0}), the application of the electrode potential (e.g. absent or not\cite{Bonnet2012,Bouzid2018,Surendralal2018}, with explicit ions\cite{Hansen2016a,Le2020} or an implicit solvent model\cite{quantum-environment,Andreussi2012,Mathew2014,Held2014,SUNDARARAMAN2017g,Letchworth-Weaver2012,Bonnet2013,BONNET2014,Lespes2015, Fisicaro2016, Fisicaro2017, Ringe2017, Sundararaman2017,Sundararaman2017a, Sundararaman2017c,Goddard2017,Huang2018, Zhang2018, Peterson2018,Nattino2019, Andreussi2019, Hoermann2019, Gauthier2019,Hoermann2020Esorp}) or the derivation of macroscopic quantities (e.g. sampling \cite{Hansen2016a,Bagger2019,MITCHELL2000,MITCHELL2001,Chen2016,Weitzner2017,WeitznerClusterExpansion2017,Ambrosio2018}, mean field models\cite{Kristoffersen2018,Hoermann2020JCTC}). </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+    
+  </body>
+</html>
