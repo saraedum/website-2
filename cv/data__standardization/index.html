@@ -25,6 +25,10 @@
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
         
+          
+          
+          <meta name="theme-color" content="#000000">
+        
       
     
     
@@ -38,6 +42,8 @@
     
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     
       
     
@@ -50,7 +56,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="lime">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -61,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-standardization" class="md-skip">
+        <a href="#standardized-cv-data" class="md-skip">
           Skip to content
         </a>
       
@@ -138,6 +144,53 @@
       
       
         
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../" class="md-tabs__link md-tabs__link--active">
+      CV
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -149,8 +202,10 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="echemdb.org" class="md-nav__button md-logo" aria-label="echemdb.org" data-md-component="logo">
       
@@ -178,6 +233,121 @@
   
 
     
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        <span class="md-nav__icon md-icon"></span>
+        
+          <a href="../" class="md-nav__link"
+            style="margin: initial; padding: initial; pointer-events: initial">
+        
+          CV
+        </a>
+      </label>
+      <nav class="md-nav" aria-label="CV" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="../" class="md-nav__link"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            CV
+          </a>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../periodic__table/" class="md-nav__link">
+        Periodic Table
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../systems/" class="md-nav__link">
+        Systems
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apps/" class="md-nav__link">
+        Apps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Data Standardization
+      </a>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -197,75 +367,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#data-package" class="md-nav__link">
-    Data Package
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Package">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#definitions" class="md-nav__link">
-    Definitions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metadata-example" class="md-nav__link">
-    Metadata example
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-resource-example" class="md-nav__link">
-    Data Resource example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
-  </a>
-  
-    <nav class="md-nav" aria-label="Links">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#general" class="md-nav__link">
-    General
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-packages" class="md-nav__link">
-    Data Packages
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -277,7 +378,10 @@
               
                 
                 
-                <p>{! {{page.meta.contentmd}}  !}</p>
+                <h1 id="standardized-cv-data">Standardized CV data</h1>
+<p>In general a CV is the measured current <span class="arithmatex">\(j = -e \frac{ {\rm d} n_e}{ {\rm d} t}\)</span> while cyclically scanning the potential <span class="arithmatex">\(\Phi_E\)</span>. The current depends on the scan speed <span class="arithmatex">\(v = \frac{ {\rm }d \Phi_E}{ {\rm d} t}\)</span> as well as the active surface area (number of active surface sites). With </p>
+<p>In table we analyse different possible normalization schemes:</p>
+<p>Different conventional normalizations are possible</p>
 <h1 id="data-standardization">Data Standardization</h1>
 <p>In our database we try to follow certain data standards, more or less closely.Some informative websites are listed at the bottom. For maximum compatibility and flexibility we follow the <a href="https://specs.frictionlessdata.io/data-package/">Data Package</a> standard. The Data Package specification does NOT impose any requirements on their form or structure and can therefore be used for packaging any kind of data.</p>
 <h2 id="data-package">Data Package</h2>
@@ -290,7 +394,7 @@
 </ul>
 <p><em>Metadata</em>  </p>
 <ul>
-<li>stored in a "Descriptor".</li>
+<li>stored in a &ldquo;Descriptor&rdquo;.</li>
 <li>Metadata Descriptor MUST be a valid JSON object.</li>
 <li>MUST be named datapackage.json and it MUST be placed in the top-level directory (relative to any other resources provided as part of the Data Package)</li>
 <li>MUST contain a resources property describing the data resources, in form of a list of resource descriptors</li>
@@ -300,38 +404,40 @@
 <ul>
 <li>Files bundled locally with the Metadata Descriptor</li>
 <li>Remote resources, referenced by URL</li>
-<li>"Inline" data, included directly in the Descriptor</li>
+<li>&ldquo;Inline&rdquo; data, included directly in the Descriptor</li>
 <li>The Data Resource Descriptor, that is listed in the Metadata Descriptor MUST be a valid JSON object.</li>
 </ul>
 </blockquote>
 <h3 id="metadata-example"><a href="https://specs.frictionlessdata.io/data-package/#descriptor">Metadata</a> example</h3>
-<pre><code class="language-python">jsondict = {
-  &quot;name&quot; : &quot;a-unique-human-readable-and-url-usable-identifier&quot;,
-  &quot;title&quot; : &quot;A nice title&quot;,
-  &quot;licenses&quot; : [ ... ],
-  &quot;sources&quot; : [...],
-  # list of the data resources in this data package
-  &quot;resources&quot;: [...],
-  # optionally other json key-value pairs
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="n">jsondict</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;a-unique-human-readable-and-url-usable-identifier&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;title&quot;</span> <span class="p">:</span> <span class="s2">&quot;A nice title&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;licenses&quot;</span> <span class="p">:</span> <span class="p">[</span> <span class="o">...</span> <span class="p">],</span>
+  <span class="s2">&quot;sources&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="o">...</span><span class="p">],</span>
+  <span class="c1"># list of the data resources in this data package</span>
+  <span class="s2">&quot;resources&quot;</span><span class="p">:</span> <span class="p">[</span><span class="o">...</span><span class="p">],</span>
+  <span class="c1"># optionally other json key-value pairs</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3 id="data-resource-example"><a href="https://specs.frictionlessdata.io/data-resource/#descriptor">Data Resource</a> example</h3>
 <p>1 resource with all required, recommended and optional properties</p>
-<pre><code class="language-python">[{
-  &quot;name&quot;: &quot;example data&quot;,
-  &quot;path&quot;: &quot;http://example.com/example.csv&quot;,
-  &quot;title&quot;: &quot;Random data 0&quot;,
-  &quot;description&quot;: &quot;My favourite random data about nothing.&quot;,
-  &quot;format&quot;: &quot;csv&quot;,
-  &quot;mediatype&quot;: &quot;text/csv&quot;,
-  &quot;encoding&quot;: &quot;utf-8&quot;,
-  &quot;bytes&quot;: 1,
-  &quot;hash&quot;: &quot;&quot;,
-  &quot;schema&quot;: &quot;&quot;,
-  &quot;sources&quot;: &quot;&quot;,
-  &quot;licenses&quot;: &quot;&quot;
-}]
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="p">[{</span>
+  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;example data&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;http://example.com/example.csv&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Random data 0&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;My favourite random data about nothing.&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;csv&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;mediatype&quot;</span><span class="p">:</span> <span class="s2">&quot;text/csv&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;encoding&quot;</span><span class="p">:</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;bytes&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;schema&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;sources&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;licenses&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+<span class="p">}]</span>
+</code></pre></div>
+
 <h2 id="links">Links</h2>
 <h3 id="general">General</h3>
 <ul>
@@ -339,12 +445,12 @@
 </ul>
 <h3 id="data-packages">Data Packages</h3>
 <ul>
-<li>https://frictionlessdata.io/  </li>
-<li>https://specs.frictionlessdata.io/  </li>
-<li>https://specs.frictionlessdata.io/data-package/  </li>
-<li>https://specs.frictionlessdata.io/data-resource/</li>
-<li>https://ckan.org/</li>
-<li>https://json-schema.org/understanding-json-schema/about.html#about  </li>
+<li><a href="https://frictionlessdata.io/">https://frictionlessdata.io/</a>  </li>
+<li><a href="https://specs.frictionlessdata.io/">https://specs.frictionlessdata.io/</a>  </li>
+<li><a href="https://specs.frictionlessdata.io/data-package/">https://specs.frictionlessdata.io/data-package/</a>  </li>
+<li><a href="https://specs.frictionlessdata.io/data-resource/">https://specs.frictionlessdata.io/data-resource/</a></li>
+<li><a href="https://ckan.org/">https://ckan.org/</a></li>
+<li><a href="https://json-schema.org/understanding-json-schema/about.html#about">https://json-schema.org/understanding-json-schema/about.html#about</a>  </li>
 </ul>
                 
                   
@@ -363,6 +469,39 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../apps/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Apps
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../about/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              About
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -383,10 +522,20 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/tables.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
     
   </body>
